@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="game7_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="141" height="105" alignment="left" text="Label" textAlignment="center" id="BX5-hc-Nqe"/>
+                        <button width="1" alignment="left" title="Button" id="cX5-kt-Fn5">
+                            <connections>
+                                <action selector="btn1Action" destination="AgC-eL-Hgc" id="WZs-zV-QAP"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="Rwt-B6-fZ7">
+                            <connections>
+                                <action selector="btn2Action" destination="AgC-eL-Hgc" id="w1q-47-vZP"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="V6V-CA-FNq">
+                            <connections>
+                                <action selector="btn3Action" destination="AgC-eL-Hgc" id="nS1-Tu-OXf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="UjD-6O-3RY">
+                            <connections>
+                                <action selector="btn4Action" destination="AgC-eL-Hgc" id="MTr-TK-C3d"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btn1" destination="cX5-kt-Fn5" id="P2f-Bd-nMe"/>
+                        <outlet property="btn2" destination="Rwt-B6-fZ7" id="7WU-Ve-0nN"/>
+                        <outlet property="btn3" destination="V6V-CA-FNq" id="CtP-Rw-jt3"/>
+                        <outlet property="btn4" destination="UjD-6O-3RY" id="k0B-cN-liS"/>
+                        <outlet property="label" destination="BX5-hc-Nqe" id="mxK-Jv-gvC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="40" y="53.5"/>
+        </scene>
+    </scenes>
+</document>
